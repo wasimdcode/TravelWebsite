@@ -76,7 +76,7 @@ nav {
   z-index: 10000;
 }
 .log-image {
-  background-image: url("/images/logoPost.png");
+  background-image: url("images/logoPost.png");
   background-position: left;
   background-size: contain;
   height: 3rem;
@@ -138,7 +138,7 @@ header {
   width: 100%;
   border: red 1px solid;
   background-color: bisque;
-  background-image: url("/images/OnePiece.jpeg");
+  background-image: url("images/OnePiece.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
