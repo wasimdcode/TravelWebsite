@@ -235,6 +235,7 @@ main{
   grid-template-rows: auto auto auto auto;
   row-gap: 1rem;
   justify-content: center;
+  justify-items: center;
 }
 .card1 {
   width: 90vw;
@@ -280,13 +281,18 @@ main{
   padding: 0.2rem;
 }
 .activities {
-  width: 100%;
-  padding: 0rem 1rem;
+  width: 90%;
+  border: 1px solid red;
+  /* padding: 0rem 1rem; */
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  margin: auto;
+  text-align: center;
 }
 .activity {
+  display: flex;
+
   height: 12vh;
   width: 17vw;
   display: flex;
@@ -295,8 +301,8 @@ main{
 }
 .circle {
   background-color: #e62429;
-  height: auto;
-  width: auto;
+  height: 100%;
+  width: 100%;
   border-radius: 50px;
 
 }
