@@ -336,7 +336,7 @@ main {
   box-shadow: inset -4px -4px 0px white;
 }
 .testi-box img {
-  width: 20%;
+  width: 4rem;
   border-radius: 100%;
   border: 2px solid white;
   filter: drop-shadow(2px 4px 6px black);
@@ -351,9 +351,10 @@ main {
 }
 .name {
   font-weight: bold;
+  font-size: 100%;
 }
 .country {
-  font-size: 0.8rem;
+  font-size: 100%;
 }
 .para {
   padding: 0.5rem 0rem;
@@ -361,16 +362,16 @@ main {
 }
 footer {
   width: 100%;
-  background: red;
-  height: 40vw;
+  background: var(--color-primary-red);
+  height: 10rem;
   display: grid;
   grid-auto-flow: row;
   align-items: center;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   padding: 1rem;
   margin-top: 2rem;
-  row-gap: 1rem;
+  row-gap: 0.6rem;
 }
 .txt-foot {
   display: flex;
@@ -378,36 +379,41 @@ footer {
   justify-content: center;
   align-items: flex-start;
   grid-column: 1/2;
-  grid-row: 1/3;
+  grid-row: 2/3;
 }
 .social-icons {
   display: flex;
   gap: 0.3rem;
   flex-direction: column;
-  grid-column: 2/3;
-  grid-row: 1/3;
+  grid-column: 2/4;
+  grid-row: 2/3;
+  align-items: flex-end;
 }
 .social-icons img {
-  width: 20%;
+  width: 2rem;
 }
 .input-btn {
   display: flex;
-  grid-column: 1/3;
-  grid-row: 3/4;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   width: 90%;
+  gap: 0.3rem;
+  grid-column: 1/4;
+  grid-row: 1/2;
 }
 .input-btn a{
   margin: 0rem auto;
+  width: 111%;
+  text-align: center;
 }
 .input-btn input{
   /* position: absolute; */
-      width: 80vw;
-      height: 2rem;
-    border-radius: 50px;
-    border: none;
+  width: 90vw;
+  height: 2rem;
+  border-radius: 50px;
+  border: none;
+  padding-left: 10px;
 }
 
 .input-btn button{
@@ -418,17 +424,17 @@ footer {
   position: absolute;
   right: 1rem;
   background-image: linear-gradient(to right,
-    var(--color-primary-red) 24%,
-    rgb(99, 3, 3)
-    
+  var(--color-primary-red) 24%,
+  rgb(99, 3, 3)
+  
   );
   color: white;
-
+  
 }
 .int{
   display: flex;
-      align-items: center;
-    flex-direction: row;
+  align-items: center;
+  flex-direction: row;
 }
 
 @media screen and (min-width: 700px) {
@@ -482,8 +488,7 @@ footer {
     grid-column: 2/3;
   }
   .para {
-    padding: 0.5rem 0rem;
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
   .name {
     font-weight: bold;
@@ -492,6 +497,7 @@ footer {
   .country {
     font-size: 1rem;
   }
+  
 }
 
 @media screen and (min-width: 1023px) {
@@ -505,7 +511,7 @@ footer {
   .navItems > li > a {
     font-size: 1rem;
   }
-
+  
   .book-now {
     padding: 0.6rem 1.3rem;
     border-radius: 50px;
@@ -531,7 +537,7 @@ footer {
   .h-box {
     height: 40vh;
   }
-
+  
   .card1 h2 {
     font-size: 180%;
     top: 65%;
@@ -556,7 +562,7 @@ footer {
   .vname {
     font-size: 2.5rem;
   }
-
+  
   .navItems > li > a {
     font-size: 1.8rem;
   }
@@ -594,5 +600,18 @@ footer {
   }
   .A-name {
     font-size: 150%;
+  }
+  .testi-box img{
+    width: 6rem;
+  }
+  .para {
+    font-size: 1.5rem;
+  }
+  .name {
+    font-weight: bold;
+    font-size: 1.8rem;
+  }
+  .country {
+    font-size: 1.4rem;
   }
 }
